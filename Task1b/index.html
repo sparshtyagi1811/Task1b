@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Setup</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="viewPanel">
+            <h2>Select a view</h2>
+            <p>You can also customize these views in settings</p>
+            <div class="options view-options">
+                <div class="option" onclick="selectOption(this)">
+                    <div class="icon-box square">
+                        <span class="icon">📋</span>
+                    </div>
+                    <label for="list" class="option-label">List</label>
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                    <div class="icon-box square">
+                        <span class="icon">📊</span>
+                    </div>
+                    <label for="board" class="option-label">Board</label>
+                </div>
+            </div>
+            <button class="button small">Next</button>
+        </div>
+        <div class="form-container" id="managePanel">
+            <h2>Who can manage projects</h2>
+            <p>Don't panic — You can also customize these permissions in settings</p>
+            <div class="options">
+                <div class="option" onclick="selectOption(this)">
+                    <span class="icon">👥</span>
+                    <div class="text-container">
+                        <label for="everyone">Everyone</label>
+                        <small>All users can now see it, but guests cannot access the project.</small>
+                    </div>
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                    <span class="icon">🔑</span>
+                    <div class="text-container">
+                        <label for="admins">Only Admin's</label>
+                        <small>Only admins can manage everything.</small>
+                    </div>
+                </div>
+                <div class="option" onclick="selectOption(this)">
+                    <span class="icon">👤</span>
+                    <div class="text-container">
+                        <label for="specific">Only to Specific people</label>
+                        <small>Only some specific people can see it.</small>
+                    </div>
+                </div>
+            </div>
+            <button class="button small gap-top">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

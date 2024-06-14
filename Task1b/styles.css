@@ -1,0 +1,132 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Align panels horizontally */
+    gap: 30px;
+}
+
+.form-container {
+    padding: 20px;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space, ensuring button stays at the bottom */
+    height: 100%; /* Ensure same height */
+}
+
+.form-container#viewPanel {
+    height: 400px; /* Adjusted height for the "Select a view" section */
+}
+
+.form-container#managePanel {
+    margin-top: 0; /* Align the second section correctly */
+}
+
+.form-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.options.view-options {
+    flex-direction: row; /* Display view options in a row */
+    justify-content: space-between;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    gap: 10px;
+    flex: 1; /* Ensure options take equal space */
+}
+
+.option.selected {
+    border-color: #007bff;
+    background-color: #e7f1ff;
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.icon-box.square {
+    width: 80px;
+    height: 80px;
+}
+
+.icon {
+    font-size: 24px;
+}
+
+.button {
+    display: block;
+    padding: 8px 16px;
+    margin-top: auto; /* Ensure the button stays at the bottom */
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center; /* Center the button horizontally */
+}
+
+.button.small {
+    width: auto;
+}
+
+.button.gap-top {
+    margin-top: 30px; /* Add gap above the next button */
+}
+
+.option-label {
+    margin-top: 8px; /* Ensure labels are slightly above small text */
+    font-size: 16px;
+    font-weight: 600;
+}
+
+small {
+    display: block;
+    font-size: 12px;
+    color: #666;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+    flex: 1; /* Allow the text container to grow */
+}
